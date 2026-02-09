@@ -1,0 +1,24 @@
+2026-02-09T20:54:59.799+01:00  INFO 8984 --- [restartedMain] pj.ApplicationMain                       : Starting ApplicationMain using Java 25 with PID 8984 (D:\newJava\myStuff\git_hub_activity_cli\build\classes\java\main started by ADMIN in D:\newJava\myStuff\git_hub_activity_cli)
+2026-02-09T20:54:59.801+01:00  INFO 8984 --- [restartedMain] pj.ApplicationMain                       : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T20:54:59.837+01:00  INFO 8984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-09T20:54:59.837+01:00  INFO 8984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-09T20:55:00.437+01:00  INFO 8984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T20:55:00.446+01:00  INFO 8984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T20:55:00.446+01:00  INFO 8984 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-02-09T20:55:00.477+01:00  INFO 8984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T20:55:00.478+01:00  INFO 8984 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 640 ms
+2026-02-09T20:55:00.865+01:00  INFO 8984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T20:55:00.883+01:00  INFO 8984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-09T20:55:00.888+01:00  INFO 8984 --- [restartedMain] pj.ApplicationMain                       : Started ApplicationMain in 1.395 seconds (process running for 1.865)
+2026-02-09T20:55:05.757+01:00  INFO 8984 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-09T20:55:05.757+01:00  INFO 8984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-09T20:55:05.758+01:00  INFO 8984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-02-09T20:55:05.780+01:00  INFO 8984 --- [http-nio-8080-exec-2] p.adapter.in.rest.GitHubRestController   : Fetching activity for user: p
+2026-02-09T20:55:05.795+01:00  INFO 8984 --- [http-nio-8080-exec-2] p.a.out.github.client.GitHubApiClient    : Loading user events for username p from GitHub
+2026-02-09T20:55:06.448+01:00  INFO 8984 --- [http-nio-8080-exec-2] p.a.out.github.client.GitHubApiClient    : Got 2 events from p
+2026-02-09T20:55:09.883+01:00  INFO 8984 --- [http-nio-8080-exec-3] p.adapter.in.rest.GitHubRestController   : Fetching activity for user: p
+2026-02-09T20:55:15.212+01:00  INFO 8984 --- [http-nio-8080-exec-4] p.adapter.in.rest.GitHubRestController   : Fetching activity for user: psfgffsgfdsgsg
+2026-02-09T20:55:15.212+01:00  INFO 8984 --- [http-nio-8080-exec-4] p.a.out.github.client.GitHubApiClient    : Loading user events for username psfgffsgfdsgsg from GitHub
+2026-02-09T20:55:15.375+01:00  WARN 8984 --- [http-nio-8080-exec-4] p.adapter.in.rest.GitHubRestController   : User not found: psfgffsgfdsgsg
+2026-02-09T20:55:15.380+01:00  WARN 8984 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [pj.exceptions.UserNotFoundException: User not found: psfgffsgfdsgsg]
+2026-02-09T20:55:25.455+01:00  INFO 8984 --- [http-nio-8080-exec-6] p.adapter.in.rest.GitHubRestController   : Fetching activity for user: p
