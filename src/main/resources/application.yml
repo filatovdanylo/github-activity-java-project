@@ -6,6 +6,14 @@ github:
 spring:
   main:
     banner-mode: off
+  datasource:
+    username: root
+    password: ${PASSWORD}
+    url: jdbc:mysql://localhost:3306/gamification_app
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 
 logging:
   level:

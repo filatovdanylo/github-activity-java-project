@@ -1,11 +1,13 @@
 package pj.app.port.out;
 
-import pj.adapter.out.github.dto.GitHubEventDTO;
+import pj.domain.model.Activity;
+
 import java.util.List;
 
 public interface ActivityRepositoryPort {
-    void saveAll(List<GitHubEventDTO> events);
-    void saveEvent(GitHubEventDTO event);
-    void deleteEvent(String id);
+    void saveAll(List<Activity> events);
+    void saveEvent(Activity event);
+    int getCountByRepo(String repo_name);
+    void deleteEventsForRepo(String repo_name);
     void deleteAllEvents();
 }
