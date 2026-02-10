@@ -22,3 +22,22 @@
 2026-02-09T20:55:15.375+01:00  WARN 8984 --- [http-nio-8080-exec-4] p.adapter.in.rest.GitHubRestController   : User not found: psfgffsgfdsgsg
 2026-02-09T20:55:15.380+01:00  WARN 8984 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [pj.exceptions.UserNotFoundException: User not found: psfgffsgfdsgsg]
 2026-02-09T20:55:25.455+01:00  INFO 8984 --- [http-nio-8080-exec-6] p.adapter.in.rest.GitHubRestController   : Fetching activity for user: p
+2026-02-09T21:12:27.773+01:00  INFO 17572 --- [restartedMain] pj.ApplicationMain                       : Starting ApplicationMain using Java 25 with PID 17572 (D:\newJava\myStuff\git_hub_activity_cli\build\classes\java\main started by ADMIN in D:\newJava\myStuff\git_hub_activity_cli)
+2026-02-09T21:12:27.775+01:00  INFO 17572 --- [restartedMain] pj.ApplicationMain                       : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T21:12:27.823+01:00  INFO 17572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-09T21:12:27.823+01:00  INFO 17572 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-09T21:12:28.520+01:00  INFO 17572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T21:12:28.531+01:00  INFO 17572 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T21:12:28.531+01:00  INFO 17572 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2026-02-09T21:12:28.561+01:00  INFO 17572 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T21:12:28.562+01:00  INFO 17572 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 739 ms
+2026-02-09T21:12:29.004+01:00  INFO 17572 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T21:12:29.018+01:00  INFO 17572 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-02-09T21:12:29.024+01:00  INFO 17572 --- [restartedMain] pj.ApplicationMain                       : Started ApplicationMain in 1.637 seconds (process running for 2.298)
+2026-02-09T21:12:40.942+01:00  INFO 17572 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-09T21:12:40.943+01:00  INFO 17572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-09T21:12:40.943+01:00  INFO 17572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-02-09T21:12:40.970+01:00  INFO 17572 --- [http-nio-8080-exec-1] p.adapter.in.rest.GitHubRestController   : Fetching activity for user: minorkyoto
+2026-02-09T21:12:40.990+01:00  INFO 17572 --- [http-nio-8080-exec-1] p.a.out.github.client.GitHubApiClient    : Loading user events for username minorkyoto from GitHub
+2026-02-09T21:12:41.687+01:00  INFO 17572 --- [http-nio-8080-exec-1] p.a.out.github.client.GitHubApiClient    : Got 0 events from minorkyoto
+2026-02-09T21:12:43.782+01:00  INFO 17572 --- [http-nio-8080-exec-2] p.adapter.in.rest.GitHubRestController   : Fetching activity for user: minorkyoto
