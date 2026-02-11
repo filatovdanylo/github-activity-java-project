@@ -17,12 +17,12 @@ public class ActivityHistoryEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    private String activity_type;
     private String repo_name;
-    private int number_of_activities;
-    private Instant fetched_at;
-    public ActivityHistoryEntity(String repo_name, int number_of_activities, Instant fetched_at) {
+    private Instant occurred_at;
+    public ActivityHistoryEntity(String activity_type, String repo_name, Instant occurred_at) {
+        this.activity_type = activity_type;
         this.repo_name = repo_name;
-        this.number_of_activities = number_of_activities;
-        this.fetched_at = fetched_at;
+        this.occurred_at = occurred_at;
     }
 }

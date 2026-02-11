@@ -21,5 +21,11 @@ public interface JpaActivityRepository extends JpaRepository<ActivityHistoryEnti
     DELETE FROM ActivityHistoryEntity a
         WHERE a.repo_name = :repo_name
     """)
-    void deleteByRepo_name(String repo_name);
+    void deleteByRepoName(String repo_name);
+
+    @Query("""
+    SELECT COUNT(A) FROM ActivityHistoryEntity A
+        WHERE A.activity_type = :activity_type
+    """)
+    int getCountByActivity(String activity_type);
 }
