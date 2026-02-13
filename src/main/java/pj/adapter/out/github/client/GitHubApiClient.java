@@ -15,7 +15,9 @@ import pj.exceptions.RateLimitException;
 import pj.exceptions.UserNotFoundException;
 import pj.adapter.out.github.dto.GitHubEventDTO;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 public class GitHubApiClient implements FetchGithubEventsPort {
@@ -56,7 +58,7 @@ public class GitHubApiClient implements FetchGithubEventsPort {
                 case "CreateEvent" -> ActivityType.CREATE;
                 case "ForkEvent" -> ActivityType.FORK;
                 default -> ActivityType.OTHER;
-            }, eventDTO.repo().name(), eventDTO.createdAt())).toList();
+            }, eventDTO.repo().name(), eventDTO.createdAt())).collect(Collectors.toCollection(ArrayList::new));
             return activities;
         } catch (GitHubApiException e) {
             throw e;

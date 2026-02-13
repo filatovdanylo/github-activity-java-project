@@ -30,8 +30,8 @@ public class GitHubActivityService implements LoadUserActivityUseCase {
 
         var activity = gitHubApiClient.fetchUserEvents(username);
 
-        if (activity != null && !activity.isEmpty())
-            activityRepositoryAdapter.saveAll(activity);
+//        if (activity != null && !activity.isEmpty())
+//            activityRepositoryAdapter.saveAll(activity);
 
         return activity;
     }

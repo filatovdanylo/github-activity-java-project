@@ -17,6 +17,11 @@ dependencies {
     // JPA (Hibernate)
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 
+    // Redis
+    implementation('org.springframework.boot:spring-boot-starter-cache')
+    implementation('org.springframework.boot:spring-boot-starter-data-redis')
+    implementation("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+
     // MySQL JDBC driver
     runtimeOnly("com.mysql:mysql-connector-j")
 
