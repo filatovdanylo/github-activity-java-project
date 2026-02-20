@@ -37,14 +37,14 @@ public class GitHubApiClient implements FetchGithubEventsPort {
             List<GitHubEventDTO> events = restClient.get()
                     .uri(url)
                     .retrieve()
-                    .onStatus(HttpStatusCode::is4xxClientError, ((request, response) -> {
+                    .onStatus(HttpStatusCode::is4xxClientError, ((_, response) -> {
                         switch (response.getStatusCode().value()) {
                             case 403, 429 -> throw new RateLimitException();
                             case 404 -> throw new UserNotFoundException(username);
                             default -> throw new GitHubApiException("Client error: HTTP " + response.getStatusCode());
                         }
                     }))
-                    .onStatus(HttpStatusCode::is5xxServerError, ((request, response) -> {
+                    .onStatus(HttpStatusCode::is5xxServerError, ((_, response) -> {
                         throw new GitHubApiException("GitHub server error: HTTP " + response.getStatusCode());
                     }))
                     .body(new ParameterizedTypeReference<List<GitHubEventDTO>>() {
